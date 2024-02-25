@@ -39,9 +39,16 @@ the liner layer.
 **Code Overview**
 
 --learning_rate : 'The Learning Rate of the Model'
+
 --batch_size : 'The batch size for training'
+
 --num_frames : 'Num of frames in the data preprocessing step for visual model’
+
 --epochs : 'Total number of epochs for training'
+
 --iteration : 'Iteration for creating data loader'
+
 --dropout : 'Dropout value for al the models'
+
 --model : 'Which model to run visual/text/multimodal'
+
