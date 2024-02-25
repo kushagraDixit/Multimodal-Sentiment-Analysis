@@ -14,6 +14,7 @@ interest in computer vision, I was particularly fascinated by exploring how
 transformers contribute to the analysis of visual sequences.
 
 **The Dataset**
+
 MELD (Multimodal EmotionLines Dataset) is a dataset designed for research in
 multimodal sentiment analysis. It combines textual data with audio and visual
 modalities to provide a comprehensive resource for studying emotion and sentiment
@@ -23,6 +24,7 @@ the 9990 total utterances. The dataset have 3 labels for each utterance: Neutral
 Positive and Negative.
 
 **Model Specifications**
+
 Text Model : For textual sentiment analysis I am using RoBERTa with a vocab size of
 50265 and hidden size of 768, with 12 hidden layers and 12 attention heads.
 Visual Model : For visual sentiment analysis I am using VideoMAE, which takes
@@ -35,10 +37,10 @@ classifier. I have concatenated the logits from both text and visual models to i
 the liner layer.
 
 **Code Overview**
+
 --learning_rate : 'The Learning Rate of the Model'
 --batch_size : 'The batch size for training'
---num_frames : 'Num of frames in the data preprocessing step for
-’ visual model’
+--num_frames : 'Num of frames in the data preprocessing step for visual model’
 --epochs : 'Total number of epochs for training'
 --iteration : 'Iteration for creating data loader'
 --dropout : 'Dropout value for al the models'
